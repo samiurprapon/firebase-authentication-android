@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="8sp"
+    tools:context=".auth.AuthVerificationActivity">
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/verification_code"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_code_sent"/>
+
+    <EditText
+        android:id="@+id/verificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:maxLength="6"
+        android:textAlignment="center"
+        tools:ignore="autoFill,LabelFor,TextFields" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verificationCode"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/verifyBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_purple_button"
+        android:layout_marginTop="30dp"
+        android:text="@string/start"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project</string>
+
+    <!--Auth-->
+    <string name="number_hint">01xxxxxxxxx</string>
+    <string name="your_mobile_number">Your Mobile Number:</string>
+    <string name="we_will_send_you_an_otp">We will send you an OTP to verify its you.\n</string>
+    <string name="join">JOIN</string>
+
+    <string name="verification_code">Verification Code</string>
+    <string name="verification_code_sent">Please type the verification code \nsent to your phone</string>
+    <string name="start">START</string>
+</resources>
